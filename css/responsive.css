@@ -1,0 +1,50 @@
+/* Mobile first */
+
+/* mobile large */
+@media screen and (min-width:425px) {
+
+    /* barra di navigazione sinistra */
+    .bar {
+        width: 35%;
+    }
+
+    /* container destro */
+    .container {
+        width: 65%;
+
+    }
+
+}
+
+
+/* tablet */
+@media screen and (min-width:768px) {
+
+    /* barra di navigazione sinistra */
+    .bar {
+        width: 30%;
+    }
+
+    /* container destro */
+    .container {
+        width: 70%;
+
+    }
+
+}
+
+/* desktop */
+@media screen and (min-width:1024px) {
+
+    /* barra di navigazione sinistra */
+    .bar {
+        width: 20%;
+    }
+
+    /* container destro */
+    .container {
+        width: 80%;
+
+    }
+
+}
