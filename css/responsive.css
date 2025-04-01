@@ -3,9 +3,29 @@
 /* mobile large */
 @media screen and (min-width:425px) {
 
+    :root {
+        --icon-dimension: 30px;
+    }
+
     /* barra di navigazione sinistra */
     .bar {
         width: 35%;
+    }
+
+
+
+    .logo-large {
+        display: inline;
+
+    }
+
+    .logo-small {
+        display: none;
+    }
+
+    .navigation-bar span {
+        display: inline;
+
     }
 
     /* container destro */
@@ -24,6 +44,7 @@
     .bar {
         width: 30%;
     }
+
 
     /* container destro */
     .container {

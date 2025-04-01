@@ -2,6 +2,7 @@
 
 :root {
     --bot-height: 90px;
+    --icon-dimension: 20px;
 }
 
 /* RESET */
@@ -21,7 +22,15 @@ img {
     max-width: 100%;
 }
 
+ul {
+    list-style: none;
+}
+
 /* utility */
+.hide-small {
+
+    display: none;
+}
 
 /* MAIN */
 /* struttura principale app */
@@ -48,21 +57,54 @@ img {
 .bar {
     width: 10%;
     height: 100%;
-    background-color: blueviolet;
+    background-color: #000000;
+    color: #D2D2D2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
+
+/* parte superiore della barra sinistra */
 /* logo */
-.logo {
 
-    .logo-small {
-        width: 80%;
 
-    }
+.logo-small {
+    display: inline-block;
+    width: var(--icon-dimension);
+    padding: 5px 0 10px;
 
-    .logo-large {
-        display: none;
+
+}
+
+.navigation-bar {
+    text-align: center;
+
+}
+
+
+.navigation-bar span,
+.logo-large {
+    display: none;
+
+}
+
+.nav-list li {
+    margin-bottom: 5px;
+
+    img {
+        width: var(--icon-dimension);
     }
 }
+
+
+
+/* Parte inferiore della barra sinistra */
+
+
+
+
 
 /* container destro */
 .container {
