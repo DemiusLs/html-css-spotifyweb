@@ -16,7 +16,10 @@ img {
     max-width: 100%;
 }
 
+/* utility */
+
 /* MAIN */
+/* struttura principale app */
 .wrapper {
     height: 100vh;
     width: 100%;
@@ -24,15 +27,54 @@ img {
     background-color: #141922;
 }
 
+/* TOP SECTION */
 .top-section {
 
     height: calc(100% - var(--bot-height));
     width: 100%;
 
     background-color: aquamarine;
+
+    display: flex;
+
+}
+/* barra di navigazione sinistra */
+.bar{
+    width: 15%;
+    height: 100%;
+    background-color: blueviolet;
 }
 
+/* container destro */
+.container{
+    width: 85%;
+    height: 100%;
+    background-color: rgb(226, 183, 43);
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(214, 31, 25);
+}
+
+.content-navigation{
+    
+    width: 100%;
+
+    background-color: blanchedalmond;
+    height: 20%;
+}
+
+.content{
+    width: 100%;
+    
+}
+
+/* BOT-SECTION */
 .bot-section {
     height: var(--bot-height);
     width: 100%;
+    background-color: rgb(129, 161, 93);
 }
+
