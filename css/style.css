@@ -1,0 +1,38 @@
+/* variables */
+
+:root {
+    --bot-height: 90px;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common */
+img {
+    max-width: 100%;
+}
+
+/* MAIN */
+.wrapper {
+    height: 100vh;
+    width: 100%;
+
+    background-color: #141922;
+}
+
+.top-section {
+
+    height: calc(100% - var(--bot-height));
+    width: 100%;
+
+    background-color: aquamarine;
+}
+
+.bot-section {
+    height: var(--bot-height);
+    width: 100%;
+}
