@@ -4,7 +4,8 @@
 @media screen and (min-width:425px) {
 
     :root {
-        --icon-dimension: 30px;
+        --icon-width: 30px;
+        --sidebar-width: 120px;
     }
 
     /* barra di navigazione sinistra */
@@ -29,7 +30,7 @@
     }
 
     /* container destro */
-    .container {
+    .main-content {
         width: 65%;
 
     }
@@ -47,7 +48,7 @@
 
 
     /* container destro */
-    .container {
+    .main-content {
         width: 70%;
 
     }
@@ -63,7 +64,7 @@
     }
 
     /* container destro */
-    .container {
+    .main-content {
         width: 80%;
 
     }

@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,11 +22,11 @@
     <!-- wrapper principale -->
     <div class="wrapper">
         <!-- parte superiore del wrapper -->
-        <section class="top-section">
+
+        <div class="top-section">
             <!-- barra di navigazione laterale -->
+
             <div class="bar">
-
-
                 <!-- navigation -->
                 <nav class="navigation-bar">
                     <!-- loghi -->
@@ -42,33 +48,94 @@
 
 
                 <div class="bottom-bar">
-                    <a href=""><i class="fa-regular fa-circle-down"></i></a>
-                    <a href=""><i class="fa-regular fa-user"></i></a>
+                    <a href="" class="download"><i class="fa-regular fa-circle-down"></i></a>
+                    <a href="" class="user"><i class="fa-regular fa-user"></i></a>
+
                 </div>
-
-
-
-
-
             </div>
-            <!-- contenitore destro -->
-            <div class="container">
+
+
+            <!-- main container -->
+            <main class="main-content">
                 <!-- header container -->
                 <div class="header">
-                    <a href="">EFFETTUA L'UPGRADE</a>
+                    <a href="" class="btn">EFFETTUA L'UPGRADE</a>
                 </div>
                 <!-- navigazione del container -->
-                <div class="content-navigation"></div>
+                <div class="content-navigation">
+
+                    <ul class="title-list">
+                        <li><a href="">IN EVIDENZA</a></li>
+                        <li><a href="">PODCAST</a></li>
+                        <li><a href="">CLASSIFICHE</a></li>
+                        <li><a href="">GENERI E MOOD</a></li>
+                        <li><a href="">NUOVE USCITE</a></li>
+                        <li><a href="">SCOPRI</a></li>
+                    </ul>
+                </div>
+
+
                 <!-- contenuto -->
-                <div class="content"></div>
-            </div>
+                <div class="content">
 
-        </section>
-        <!-- parte inferiore del wrapper -->
-        <section class="bot-section">
+                    <section>
+                        <h2>Recently played</h2>
 
-        </section>
+                        <div class="row">
+
+                            <div class="col">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <h3>Heavy Metal</h3>
+                                <span>Subitle</span>
+                            </div>
+                            <div class="col">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <h3>Heavy Metal</h3>
+                                <span>Subitle</span>
+                            </div>
+
+                            <div class="col">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <h3>Heavy Metal</h3>
+                                <span>Subitle</span>
+                            </div>
+
+                            <div class="col">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <h3>Heavy Metal</h3>
+                                <span>Subitle</span>
+                            </div>
+
+                            <div class="col">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <h3>Heavy Metal</h3>
+                                <span>Subitle</span>
+                            </div>
+
+                            <div class="col">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <h3>Heavy Metal</h3>
+                                <span>Subitle</span>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </main>
+
+        </div>
+
     </div>
+
+
+
+
+
+    <!-- parte inferiore del wrapper -->
+    <footer class="action-bar">
+
+    </footer>
+
 
 </body>
 
