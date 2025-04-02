@@ -3,7 +3,7 @@
 :root {
     /* dimensioni elementi */
     --bot-height: 90px;
-    --icon-width: 30px;
+    --icon-width: 20px;
     --sidebar-width: 40px;
     --header-height: 80px;
     /* variabili visualizzazione */
@@ -62,7 +62,6 @@ ul {
 /* TOP SECTION */
 .top-section {
 
-    /* height: calc(100% - var(--bot-height)); */
     height: calc(100% - var(--bot-height));
     width: 100%;
     background-color: aquamarine;
@@ -136,7 +135,7 @@ ul {
         font-size: 3rem;
         aspect-ratio: 1;
         overflow: hidden;
-        width: 25px;
+        width: var(--icon-width);
 
         display: flex;
         align-items: center;
@@ -151,19 +150,22 @@ ul {
 
 /* MAIN CONTENT*/
 .main-content {
-    /* width: calc(100% - var(--sidebar-width)); */
+    width: calc(100% - var(--sidebar-width));
     height: 100%;
-    background-color: rgb(226, 183, 43);
-    
+    background-color: #141922;
+    overflow: auto;
+
 }
 
 /* header container */
 .header {
-    position: sticky;
-    top: 0;
+
     width: 100%;
     height: 80px;
-    background-color: rgb(214, 31, 25);
+    background-color: rgba(20,25,34, 0.8);
+
+    position: sticky;
+    top: 0;
 
     display: flex;
     align-items: center;
@@ -175,7 +177,7 @@ ul {
 
 .btn {
     color: white;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 30px;
     padding: 10px 20px;
     margin-right: 5px;
@@ -189,7 +191,7 @@ ul {
 
     width: 100%;
     background-color: blanchedalmond;
-    padding: 20px 20px;
+
 
 }
 
@@ -198,14 +200,18 @@ ul {
     flex-wrap: wrap;
     gap: var(--gap-col);
     justify-content: center;
+    padding: 20px;
+
 }
 
 .title-list li {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: calc((100% - var(--gap-col) * (var(--n-col) - 1)) / var(--n-col));
 
     font-size: 6px;
     font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
 
 }
 
@@ -213,8 +219,19 @@ ul {
 .content {
     width: 90%;
     margin: 0 auto;
-    
 
+    color: hsl(0, 0%, 100%);
+
+
+
+}
+
+.content-section {
+    padding: 20px 0;
+
+    h2 {
+        margin-bottom: 15px;
+    }
 }
 
 .row {
@@ -227,11 +244,29 @@ ul {
 .col {
     border: 2px solid black;
     width: calc((100% - var(--gap-col-cont) * (var(--n-col-cont) - 1)) / var(--n-col-cont));
+    text-align: center;
 
-    font-size: 6px;
-    font-weight: 700;
+    img {
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        margin-bottom: 5px;
+
+    }
+
+    span {
+        font-size: 8px;
+    }
+
+
 
 }
+
+.round {
+    border-radius: 50%;
+}
+
 
 
 /* BOT-SECTION */
