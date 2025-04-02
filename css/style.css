@@ -11,7 +11,7 @@
     --hide-small: none;
     /* Variabili per calcolo colonne title list */
     --gap-col: 5px;
-    --n-col: 4;
+    --n-col: 3;
 
     /* Variabili per calcolo colonne content */
     --gap-col-cont: 10px;
@@ -206,7 +206,7 @@ ul {
     /* border: 2px solid black; */
     width: calc((100% - var(--gap-col) * (var(--n-col) - 1)) / var(--n-col));
 
-    font-size: 6px;
+
     font-weight: 700;
     margin-bottom: 10px;
     text-align: center;
@@ -279,4 +279,76 @@ ul {
     height: var(--bot-height);
     width: 100%;
     background-color: rgb(129, 161, 93);
+}
+
+.footer-row {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+
+}
+
+.col-footer-small {
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+
+
+
+
+}
+
+.col-40 {
+    width: 30%;
+    margin-left: 5px;
+
+    img {
+        display: inline-block;
+
+    }
+
+    span {
+        display: inline-block;
+
+    }
+}
+
+.col-20 {
+    margin-left: 5px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+.barra {
+    height: 2px;
+    width: 40px;
+    background: #000000;
+}
+
+.col-footer-big {
+    width: calc(100% - 200px);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+
+
+
+
+}
+
+.media-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.progression{
+    display: flex;
+    align-items: center;
 }
