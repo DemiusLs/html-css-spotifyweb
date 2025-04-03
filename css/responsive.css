@@ -8,7 +8,7 @@
     :root {
         /* --icon-width: 30px; */
         --sidebar-width: 230px;
-        /* Variabili per calcolo colonne content */
+        
 
     }
 
@@ -17,7 +17,9 @@
         display: inline;
 
     }
-
+.sidebar-top{
+    text-align: start;
+}
 
 
     .logo-small {
@@ -25,14 +27,18 @@
     }
 
 
-    .sidebar-top {
-        text-align: start;
-
-    }
+    
 
     .sidebar-list {
-        text-align: start;
+        align-items: flex-start;
+        
     }
+
+    .playlist{
+        display: inline-block;
+    }
+
+
 
 
 
