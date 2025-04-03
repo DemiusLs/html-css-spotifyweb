@@ -7,8 +7,9 @@
 
     :root {
         /* --icon-width: 30px; */
-        --sidebar-width: 230px;
-        
+        --sidebar-width: 200px;
+        --col-footer-width: 180px;
+
 
     }
 
@@ -17,9 +18,10 @@
         display: inline;
 
     }
-.sidebar-top{
-    text-align: start;
-}
+
+    .sidebar-top {
+        text-align: start;
+    }
 
 
     .logo-small {
@@ -27,37 +29,80 @@
     }
 
 
-    
+
 
     .sidebar-list {
         align-items: flex-start;
-        
+
     }
 
-    .playlist{
+    .playlist {
         display: inline-block;
     }
 
+    .sidebar-bot {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .download {
+            padding-bottom: 10px;
+            width: 100%;
+
+            border-bottom: 1px solid white;
+
+            i {
+                margin-right: 10px;
+
+            }
+        }
+
+        .user {
+            i {
+                margin-right: 10px;
+            }
+
+        }
 
 
 
 
+
+
+
+    }
 
 }
-
-
 
 
 /* Vista medium */
 @media screen and (min-width:800px) {
 
     :root {
-        /* --icon-width: 30px; */
-        --sidebar-width: 120px;
-        /* Variabili per calcolo colonne content */
-        --gap-col: 10px;
-        --n-col: 6;
+        --sidebar-width: 230px;
+        --col-footer-width: 230px;
+
+        --gap-col: 6px;
+        --n-col: 4;
     }
+
+    /* contenuto del container */
+    .content {
+        width: 95%;
+        margin: 0 auto;
+        color: #ffffff;
+    }
+
+    .col-text{
+        strong{
+            display: block;
+        }
+    }
+    .col-icons {
+        display: flex;
+
+        
+    }
+
 }
 
 /* vista large */

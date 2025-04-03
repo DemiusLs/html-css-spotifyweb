@@ -119,6 +119,7 @@ ul {
     flex-direction: column;
     align-items: center;
     font-size: 0.8rem;
+    padding: 10px 0 25px;
 }
 
 .sidebar-list li {
@@ -144,35 +145,59 @@ ul {
     display: none;
 
     h2 {
-        margin-bottom: 10px;
-    }
-
-    span {
+        margin-bottom: 20px;
         font-size: 1rem;
-        font-weight: 700;
     }
 
-    button {
-        width: 35px;
-        height: 35px;
-        aspect-ratio: 1;
-        line-height: 0;
-        font-size: 3rem;
-        vertical-align: middle;
+    .add-button {
 
+        margin-bottom: 15px;
+
+        span {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        button {
+            width: 35px;
+            height: 35px;
+            aspect-ratio: 1;
+            line-height: 0;
+            font-size: 3rem;
+            vertical-align: middle;
+
+        }
+
+
+    }
+
+    ul li {
+        margin-bottom: 25px;
     }
 
 }
 
 /* Parte inferiore della barra sinistra */
 .sidebar-bot {
+
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .download {
-        font-size: 1.2rem;
+        display: flex;
         margin-bottom: 15px;
+
+        i {
+            font-size: 1.2rem;
+            
+        }
+
+        span {
+            font-size: 0.8rem;
+        }
     }
 
     .user {
@@ -184,6 +209,10 @@ ul {
             overflow: hidden;
             width: 30px;
 
+        }
+
+        span {
+            font-size: 0.8rem;
         }
 
 
@@ -353,6 +382,7 @@ ul {
 .col-text {
     flex-grow: 1;
     padding: 0 5px;
+    font-size: 0.8rem;
 
 
     span {
@@ -390,7 +420,8 @@ ul {
 
 .container {
     height: 100%;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 10px;
 }
 
 .media-buttons {
