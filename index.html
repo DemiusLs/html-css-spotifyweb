@@ -26,14 +26,14 @@
         <div class="top-section">
             <!-- barra di navigazione laterale -->
 
-            <div class="bar">
+            <div class="sidebar">
                 <!-- navigation -->
-                <nav class="navigation-bar">
+                <nav class="sidebar-top">
                     <!-- loghi -->
                     <img src="./img/logo-small.svg" alt="" class="logo-small">
-                    <img src="./img/logo.svg" alt="" class="logo-large">
+                    <img src="./img/logo.svg" alt="" class="logo-large ">
 
-                    <ul class="nav-list">
+                    <ul class="sidebar-list">
                         <li>
                             <a href=""><img src="./img/home.svg" alt=""> <span>Home</span></a>
                         </li>
@@ -47,9 +47,9 @@
                 </nav>
 
 
-                <div class="bottom-bar">
-                    <a href="" class="download"><i class="fa-regular fa-circle-down"></i></a>
-                    <a href="" class="user"><i class="fa-regular fa-user"></i></a>
+                <div class="sidebar-bot">
+                    <a href="" class="download"><i class="fa-regular fa-circle-down"></i><span>Installa App</span></a>
+                    <a href="" class="user"><i class="fa-regular fa-user"></i> <span>John Doe</span></a>
 
                 </div>
             </div>
@@ -59,12 +59,12 @@
             <main class="main-content">
                 <!-- header container -->
                 <div class="header">
-                    <a href="" class="btn">EFFETTUA L'UPGRADE</a>
+                    <a href="" class="cta-button">EFFETTUA L'UPGRADE</a>
                 </div>
                 <!-- navigazione del container -->
                 <div class="content-navigation">
 
-                    <ul class="title-list">
+                    <ul class="nav-list">
                         <li><a href="">IN EVIDENZA</a></li>
                         <li><a href="">PODCAST</a></li>
                         <li><a href="">CLASSIFICHE</a></li>
@@ -161,45 +161,54 @@
 
         </div>
         <footer class="action-bar">
-            <div class="footer-row">
-                <div class="col-footer-small">
+<!-- colonna album -->
+            <div class="album">
 
-                    <div class="col-40"><img src="./img/sinister.jpeg" alt=""></div>
-                    <div class="col-40">
-                        <strong>Sinister</strong>
-                        <span>Brano</span>
-                        <span>Nome</span>
-                    </div>
-                    <div class="col-20">
-                        <a href=""><i class="fa-regular fa-heart"></i></a>
-                        <a href=""><i class="fa-regular fa-folder"></i></a>
-                    </div>
-
+                <div class="col-40"><img src="./img/sinister.jpeg" alt="" class="img"></div>
+                <div class="col-40">
+                    <strong>Sinister</strong>
+                    <span>Brano</span>
+                    <span>Nome</span>
                 </div>
-                <div class="col-footer-big">
+                <div class="col-20">
+                    <a href=""><i class="fa-regular fa-heart"></i></a>
+                    <a href=""><i class="fa-regular fa-folder"></i></a>
+                </div>
+
+            </div>
+
+            <!-- colonna controlli  -->
+            <div class="controls">
+                <div class="container">
+                    <!-- player -->
                     <div class="media-buttons">
                         <button><i class="fa-solid fa-shuffle"></i></button>
                         <button><i class="fa-solid fa-backward-step"></i></button>
-                        <button><i class="fa-regular fa-circle-play"></i></button>
+                        <button class="play"><i class="fa-regular fa-circle-play"></i></button>
                         <button><i class="fa-solid fa-forward-step"></i></button>
                         <button><i class="fa-solid fa-rotate-right"></i></button>
 
 
                     </div>
+
+        <!-- barra progressione -->
                     <div class="progression">
                         <span>0:25</span>
                         <div class="barra"></div>
                         <span>4:35</span>
                     </div>
-
                 </div>
 
-                <div class="col-footer-small">
-                    <button><i class="fa-solid fa-list"></i></button>
-                    <button><i class="fa-solid fa-desktop"></i></button>
-                    <button><i class="fa-solid fa-volume-high"></i></button>
-                    <span class="barra"></span>
-                </div>
+
+            </div>
+
+            <div class="volume">
+                
+                <button><i class="fa-solid fa-list"></i></button>
+                <button><i class="fa-solid fa-desktop"></i></button>
+                <button><i class="fa-solid fa-volume-high"></i></button>
+                <span class="barra"></span>
+            </div>
         </footer>
 
     </div>
