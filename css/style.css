@@ -72,7 +72,7 @@ ul {
     width: var(--sidebar-width);
     height: 100%;
     background-color: #000000;
-    color: #D2D2D2;
+    color: #686B71;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -110,7 +110,7 @@ ul {
 
 .sidebar span {
     display: none;
-    font-size: 1.5em;
+    font-size: 1.1rem;
 
 }
 
@@ -147,6 +147,7 @@ ul {
     h2 {
         margin-bottom: 20px;
         font-size: 1rem;
+        color: #ffffff;
     }
 
     .add-button {
@@ -173,6 +174,7 @@ ul {
 
     ul li {
         margin-bottom: 25px;
+        font-weight: 700;
     }
 
 }
@@ -192,7 +194,7 @@ ul {
 
         i {
             font-size: 1.2rem;
-            
+
         }
 
         span {
@@ -359,7 +361,7 @@ ul {
     background-color: rgb(129, 161, 93);
     display: flex;
     justify-content: space-between;
-    color: #D2D2D2;
+    color: #ffffff;
 }
 
 
@@ -368,7 +370,7 @@ ul {
     width: var(--col-footer-width);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #282828;
 
     padding: 0 10px;
@@ -380,7 +382,7 @@ ul {
 }
 
 .col-text {
-    flex-grow: 1;
+
     padding: 0 5px;
     font-size: 0.8rem;
 
@@ -396,6 +398,7 @@ ul {
 .col-icons {
     width: 14px;
     display: inline-block;
+    color: #686B71;
 }
 
 
@@ -457,10 +460,21 @@ ul {
     align-items: center;
     justify-content: center;
     height: 40%;
+    position: relative;
 
     .barra {
         width: 80%;
         flex-grow: 1;
+    }
+    .barra-move{
+        
+       position: absolute;
+       left: 0;
+       width: 100px;
+       height: 2px;
+        
+        background-color: aqua;
+        z-index: 999;
     }
 }
 
@@ -490,4 +504,52 @@ ul {
         flex-grow: 1;
 
     }
+}
+
+/* Hover */
+
+/* sidebar */
+.sidebar-list li:hover {
+    color: #ffffff;
+}
+
+.playlist ul li:hover {
+    color: #ffffff;
+}
+
+.download:hover {
+    color: #ffffff;
+}
+
+.user:hover {
+    color: #ffffff;
+}
+
+/* main */
+/* header */
+
+.cta-button:hover {
+    color: #ffffff;
+    transform: scale(1.01);
+}
+
+/* navigation */
+
+.nav-list li:hover {
+    color: #ffffff;
+}
+
+/* footer */
+.col-text span:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.col-icons a:hover {
+    color: #ffffff;
+}
+
+/* player */
+.play:hover {
+transform: scale(1.05);
 }
