@@ -96,8 +96,7 @@ ul {
 
 .logo-small {
     display: inline-block;
-    width: 55%;
-    margin: 0 auto;
+    width: 80%;    
     padding-top: 5px;
     padding-bottom: 12px;
 
@@ -129,7 +128,7 @@ ul {
     flex-direction: column;
     align-items: center;
     font-size: 0.8rem;
-    padding: 10px 0 25px 6px;
+    padding: 10px 0 25px;
     position: relative;
 }
 
@@ -148,7 +147,7 @@ ul {
     img {
         display: inline-block;
         width: 30px;
-        padding: 2px;
+        
     }
 }
 
