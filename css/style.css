@@ -84,6 +84,16 @@ ul {
 /* logo */
 
 
+
+.barra-left {
+    height: 30px;
+    width: 3px;
+    left: -22px;
+    background-color: rgb(54, 175, 54);
+    position: absolute;
+
+}
+
 .logo-small {
     display: inline-block;
     width: 55%;
@@ -119,11 +129,13 @@ ul {
     flex-direction: column;
     align-items: center;
     font-size: 0.8rem;
-    padding: 10px 0 25px;
+    padding: 10px 0 25px 6px;
+    position: relative;
 }
 
 .sidebar-list li {
     margin-bottom: 5px;
+
 
 
     a {
@@ -138,6 +150,10 @@ ul {
         width: 30px;
         padding: 2px;
     }
+}
+
+.highlight-sidebar {
+    color: #ffffff;
 }
 
 /* playlist */
@@ -155,7 +171,7 @@ ul {
         margin-bottom: 15px;
 
         span {
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 700;
         }
 
@@ -164,7 +180,7 @@ ul {
             height: 35px;
             aspect-ratio: 1;
             line-height: 0;
-            font-size: 3rem;
+            font-size: 2rem;
             vertical-align: middle;
 
         }
@@ -210,11 +226,14 @@ ul {
             aspect-ratio: 1;
             overflow: hidden;
             width: 30px;
+            color: #ffffff;
 
         }
 
         span {
             font-size: 0.8rem;
+            color: #ffffff;
+            font-weight: 700;
         }
 
 
@@ -288,11 +307,17 @@ ul {
 }
 
 .nav-list li {
-    font-size: clamp(0.8rem, 2vw, 2rem);
+    font-size: clamp(0.8rem, 2vw, 1rem);
     font-weight: 700;
     padding: 5px;
     text-align: center;
 
+}
+
+.green-bot {
+    border-bottom: 3px solid rgb(54, 175, 54);
+    width: 40%;
+    margin: 2px auto;
 }
 
 /* contenuto del container */
@@ -307,7 +332,7 @@ ul {
 
     h2 {
         margin-bottom: 15px;
-        font-size: clamp(2rem, 3vw, 2.5rem);
+        font-size: clamp(1.4rem, 3vw, 1.7rem);
     }
 
     span {
@@ -326,7 +351,7 @@ ul {
 }
 
 .col {
-    border: 2px solid black;
+    
     width: calc((100% - var(--gap-col) * (var(--n-col) - 1)) / var(--n-col));
     text-align: center;
 
@@ -356,7 +381,7 @@ ul {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         font-size: 3rem;
         display: none;
     }
@@ -382,13 +407,24 @@ ul {
 
 
 .album {
-    width: var(--col-footer-width);
+    /* width: var(--col-footer-width);
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #282828;
 
+    padding: 0 10px; */
+
+    width: var(--col-footer-width);
     padding: 0 10px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #282828;
+    gap: 5px;
+
+
 }
 
 .img-footer {
@@ -414,6 +450,10 @@ ul {
     width: 14px;
     display: inline-block;
     color: #686B71;
+
+    .heart {
+        margin-right: 5px;
+    }
 }
 
 
@@ -421,13 +461,13 @@ ul {
 .barra {
     height: 3px;
     flex-grow: 1;
-    background: #000000;
+    background: #5A5A5A;
     position: relative;
     margin: 0 10px;
     border-radius: 5px;
 
     .barra-move {
-        display: none;
+
         position: absolute;
         left: 0;
         width: 40%;
@@ -435,7 +475,7 @@ ul {
         border-radius: 5px;
 
 
-        background-color: rgb(30, 221, 46);
+        background-color: #C1C1C1;
         z-index: 999;
     }
 
@@ -504,6 +544,11 @@ ul {
     justify-content: center;
     height: 40%;
 
+    span {
+        font-size: 0.6rem;
+        font-weight: 700;
+    }
+
 
 
 
@@ -531,10 +576,7 @@ ul {
     }
 
 
-    .barra {
-        flex-grow: 1;
 
-    }
 }
 
 /* Hover */
@@ -569,12 +611,14 @@ ul {
 .nav-list li:hover {
     color: #ffffff;
 }
+
 /* cards */
-.col:hover{
-    img{
+.col:hover {
+    img {
         opacity: 0.2;
     }
-    .play-img{
+
+    .play-img {
         display: inline-block;
     }
 
@@ -598,11 +642,22 @@ ul {
 .barra:hover {
 
     .barra-move {
-        display: inline-block;
+        background-color: rgb(123, 201, 7);
     }
 
     .bar-point {
         display: inline-block;
     }
+
+}
+
+.add-button:hover {
+    color: #ffffff;
+
+    button {
+        background-color: #ffffff;
+        border: #ffffff;
+    }
+
 
 }
